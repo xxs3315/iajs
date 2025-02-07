@@ -62,7 +62,7 @@ pnpm i
 
 - [vue3](apps/iajs-vue3)
 - [react](apps/iajs-react)
-- [responsive html](apps/iajs-responsive-html)
+- [responsive html](apps/iajs-responsive-html) `W.I.P`
 
 **packages**
 - [core](packages/iajs)
