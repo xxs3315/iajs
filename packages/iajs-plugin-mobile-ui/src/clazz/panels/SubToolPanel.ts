@@ -1,0 +1,16 @@
+export const SubToolPanelCls = [
+  'absolute',
+  'overflow-auto',
+  '[&::-webkit-scrollbar]:hidden',
+  '[-ms-overflow-style:none]',
+  '[scrollbar-width:none]',
+  'opacity-90',
+  'bottom-0',
+  'right-0',
+  'start-[68px]',
+  'portrait:start-0',
+  'portrait:bottom-[68px]',
+  'h-[48px]',
+  'portrait:h-[48px]',
+  'bg-gray-100',
+]

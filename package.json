@@ -1,0 +1,30 @@
+{
+  "name": "iajs",
+  "description": "一个基于fabricjs，框架无关的图片注记库",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "docs": "doctoc --title '**Table of content**' README.md",
+    "clean": "pnpm run -r clean",
+    "build": "pnpm run -r build",
+    "test": "pnpm run -r test",
+    "lint": "eslint --ext js,ts,tsx .",
+    "prettier": "prettier . --write"
+  },
+  "devDependencies": {
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "doctoc": "~2.2.0",
+    "eslint-plugin-import": "~2.31.0",
+    "prettier": "^3.0.3",
+    "typescript": "~4.9.0"
+  },
+  "resolutions": {
+    "bin-wrapper": "npm:bin-wrapper-china"
+  }
+}

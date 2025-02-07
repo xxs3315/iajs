@@ -1,0 +1,48 @@
+{
+  "name": "@xxs3315/iajs-plugin-mobile-gesture",
+  "description": "iajs plugin mobile gesture",
+  "version": "1.0.0",
+  "main": "umd/iajs-plugin-mobile-gesture.js",
+  "module": "iajs-plugin-mobile-gesture.js",
+  "types": "iajs-plugin-mobile-gesture.d.ts",
+  "keywords": [
+    "image",
+    "marker",
+    "annotation",
+    "editor",
+    "designer",
+    "web components"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf dev-build",
+    "build": "rollup --config rollup.config.mjs"
+  },
+  "dependencies": {
+    "@xxs3315/iajs": "workspace:*"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/hammerjs": "^2.0.41",
+    "@types/lodash-es": "^4.17.12",
+    "@types/mousetrap": "^1.6.15",
+    "@types/node": "~22.9.0",
+    "javascript-obfuscator": "^4.1.1",
+    "rimraf": "~6.0.0",
+    "rollup": "4.24.2",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-dev": "^2.0.4",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-generate-html-template": "^1.7.0",
+    "rollup-plugin-generate-package-json": "^3.2.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-obfuscator": "^1.1.0",
+    "tslib": "^2.6.2",
+    "typescript": "5.3.3"
+  }
+}

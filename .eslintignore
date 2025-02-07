@@ -1,0 +1,8 @@
+node_modules
+!.*
+dist
+build
+dts
+dev-build
+.next
+dexie.min.js

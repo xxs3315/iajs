@@ -1,0 +1,10 @@
+node_modules
+**/dist
+results
+.nyc_output
+*.tsbuildinfo
+**/dev-build
+pnpm-lock.yaml
+.npmrc
+**/dts
+.idea

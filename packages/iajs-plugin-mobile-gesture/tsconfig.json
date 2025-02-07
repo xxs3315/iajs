@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "strict": true,
+    "lib": ["es2022", "dom"],
+    "target": "es6",
+    "forceConsistentCasingInFileNames": true,
+    "preserveSymlinks": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "declaration": false,
+    "declarationMap": false
+  }
+}

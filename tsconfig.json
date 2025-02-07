@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.build.json",
+
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@xxs3315/*": [
+        "packages/iajs/src/*",
+        "packages/iajs-plugin-mobile-gesture/src/*",
+        "packages/iajs-plugin-mobile-ui/src/*",
+        "packages/iajs-plugin-crop/src/*"
+      ]
+    },
+    "noEmit": true
+  }
+}

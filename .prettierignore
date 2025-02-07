@@ -1,0 +1,11 @@
+dist
+node_modules
+README.md
+pnpm-lock.yaml
+.next
+.idea
+dev-build
+dts
+dist
+build
+dexie.min.js
