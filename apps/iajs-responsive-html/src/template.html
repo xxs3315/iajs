@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>iajs Dev</title>
+    <script src="./lib/dexie/dexie.min.js"></script>
+    <script>
+      let dev
+      let db = new Dexie('iajs')
+      document.addEventListener('DOMContentLoaded', function () {
+        dev = new iajs.Dev()
+        db.version(1).stores({
+          data: 'id, value',
+        })
+        db.version(1).stores({
+          gen: 'id, value, tiles',
+        })
+        dev.setup(db, 'single')
+      })
+    </script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        min-height: 100dvh;
+        min-width: 100dvw;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        width: 100dvw;
+        height: 100dvh;
+        background-color: lightblue;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+      "
+    >
+      <iajs-workspace id="imageMarkerDevWorkspace"></iajs-workspace>
+    </div>
+  </body>
+</html>
